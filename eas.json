@@ -1,0 +1,10 @@
+{
+  "build": {
+    "local": {
+      "ios": {
+        "simulator": true
+      }
+    },
+    "production": {}
+  }
+}
