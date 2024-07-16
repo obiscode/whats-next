@@ -17,9 +17,9 @@ const Loader = ({ isLoading }: { isLoading: boolean }) => {
     if (isLoading) {
       const timer = setTimeout(() => {
         setShowConfetti(true);
-      }, 100);
+      }, 10);
 
-      return () => clearTimeout(timer); // Cleanup timer on unmount or isLoading change
+      return () => clearTimeout(timer);
     }
   }, [isLoading]);
 
@@ -42,12 +42,19 @@ const Loader = ({ isLoading }: { isLoading: boolean }) => {
   ) : (
     <View
       style={{
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
+        width: 300,
+        height: 800,
       }}
     >
-      <LottieView source={require("../assets/confetti.json")} autoPlay loop />
+      <LottieView
+        style={{
+          width: 300,
+          height: 800,
+        }}
+        source={require("../assets/confetti.json")}
+        autoPlay
+        loop
+      />
     </View>
   );
 };

@@ -32,7 +32,7 @@ const Shuffle = () => {
       const sArray = shuffleArray([...currentList]);
       setShuffledList(sArray);
       setLoading(false);
-    }, 500);
+    }, 800);
   };
 
   useEffect(() => {
