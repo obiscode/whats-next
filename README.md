@@ -2,7 +2,7 @@
 
 This project is my first attempt to creating a react native app.
 
-![What's Next UI](images/example.png)
+![What's Next UI](doc/ui.jpeg)
 
 I challenged my self to learn react native in two weeks and so I drafted a simple app UI called What's Next.
 
